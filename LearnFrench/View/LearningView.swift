@@ -9,13 +9,14 @@ import SwiftUI
 
 struct LearningView: View {
     
+    @State  var learningVM: LearningViewModel
     @State private var showPlayer = false
     
     var body: some View {
         NavigationStack{
             VStack(spacing: 0){
                 
-                Image(.sleeping)
+                Image(learningVM.learning.image)
                     .resizable()
                     .scaledToFill()
                     .frame(height: UIScreen.main.bounds.height / 3)
@@ -27,14 +28,14 @@ struct LearningView: View {
                     VStack(alignment: .leading, spacing: 24) {
                         VStack(alignment: . leading, spacing: 8){
                             Text("Music")
-                            Text("0s")
+                            Text(learningVM.learning.duration.formatted() + "S")
                         }
                         .font(.subheadline)
                         .textCase(.uppercase)
                         .opacity(0.7)
                         
                         
-                        Text("Learn French While You Sleep")
+                        Text(learningVM.learning.title)
                             .font(.title)
                         
                         Button{
@@ -49,7 +50,7 @@ struct LearningView: View {
                                 .clipShape(.rect(cornerRadius: 20))
                         }
                         
-                        Text("8 hours of Relaxing French - Most Important Phrases and Words")
+                        Text(learningVM.learning.description)
                         Spacer()
                     }
                     .foregroundStyle(.white)
@@ -63,6 +64,8 @@ struct LearningView: View {
         }
     }
 }
+let learningVM = LearningViewModel(learning: Learning.data)
 #Preview {
-    LearningView()
+    
+    LearningView(learningVM: learningVM)
 }

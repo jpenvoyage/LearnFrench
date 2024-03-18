@@ -14,6 +14,8 @@
 		2F7359DF2BA88354006D99F2 /* LearningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7359DE2BA88354006D99F2 /* LearningView.swift */; };
 		2F7359E12BA8893F006D99F2 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7359E02BA8893F006D99F2 /* PlayerView.swift */; };
 		2F7359E32BA89DE0006D99F2 /* PlaybackControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7359E22BA89DE0006D99F2 /* PlaybackControlButton.swift */; };
+		2F7359E72BA8A84C006D99F2 /* LearningViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7359E62BA8A84C006D99F2 /* LearningViewModel.swift */; };
+		2F7359E92BA8AFD4006D99F2 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F7359E82BA8AFD4006D99F2 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		2F7359DE2BA88354006D99F2 /* LearningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningView.swift; sourceTree = "<group>"; };
 		2F7359E02BA8893F006D99F2 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		2F7359E22BA89DE0006D99F2 /* PlaybackControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackControlButton.swift; sourceTree = "<group>"; };
+		2F7359E62BA8A84C006D99F2 /* LearningViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningViewModel.swift; sourceTree = "<group>"; };
+		2F7359E82BA8AFD4006D99F2 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,10 +62,11 @@
 			isa = PBXGroup;
 			children = (
 				2F7359D02BA881E9006D99F2 /* LearnFrenchApp.swift */,
+				2F7359E42BA8A837006D99F2 /* View */,
 				2F7359D22BA881E9006D99F2 /* ContentView.swift */,
+				2F7359E82BA8AFD4006D99F2 /* Extensions.swift */,
 				2F7359E22BA89DE0006D99F2 /* PlaybackControlButton.swift */,
-				2F7359E02BA8893F006D99F2 /* PlayerView.swift */,
-				2F7359DE2BA88354006D99F2 /* LearningView.swift */,
+				2F7359E52BA8A83D006D99F2 /* ViewModel */,
 				2F7359D42BA881EA006D99F2 /* Assets.xcassets */,
 				2F7359D62BA881EA006D99F2 /* Preview Content */,
 			);
@@ -74,6 +79,23 @@
 				2F7359D72BA881EA006D99F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2F7359E42BA8A837006D99F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F7359E02BA8893F006D99F2 /* PlayerView.swift */,
+				2F7359DE2BA88354006D99F2 /* LearningView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2F7359E52BA8A83D006D99F2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2F7359E62BA8A84C006D99F2 /* LearningViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +170,11 @@
 			files = (
 				2F7359D32BA881E9006D99F2 /* ContentView.swift in Sources */,
 				2F7359D12BA881E9006D99F2 /* LearnFrenchApp.swift in Sources */,
+				2F7359E72BA8A84C006D99F2 /* LearningViewModel.swift in Sources */,
 				2F7359E32BA89DE0006D99F2 /* PlaybackControlButton.swift in Sources */,
 				2F7359DF2BA88354006D99F2 /* LearningView.swift in Sources */,
 				2F7359E12BA8893F006D99F2 /* PlayerView.swift in Sources */,
+				2F7359E92BA8AFD4006D99F2 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
